@@ -3,528 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
+  <title>Shaurya Singh | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">&lt;Shaurya /&gt;</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-logo">&lt;Shaurya /&gt;</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="Shaurya_Singh_Resume.pdf" class="btn btn-outline" download>
+      Resume
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="gradient-text">Shaurya Singh</span></h1>
+    <h2>M.Tech Biotechnology @ IIT Guwahati</h2>
+    <p>
+      Machine Learning & Data Science enthusiast focused on solving real-world
+      biological and environmental problems using AI, Computer Vision, and Deep Learning.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/shauryasingh000" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/shaurya-singh-248547210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:shauryasingh30630@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am an <strong>M.Tech Biotechnology student at IIT Guwahati</strong> (CGPA: 8.55),
+      specializing in Machine Learning, Computer Vision, and Data Science.
+    </p>
+    <p>
+      My work focuses on applying AI to real-world problems such as plant disease detection,
+      hyperspectral imaging, and predictive modeling. I enjoy building intelligent systems
+      from data preprocessing to model deployment.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <h3>Machine Learning & AI</h3>
+    <ul>
+      <li>Python</li>
+      <li>Scikit-learn</li>
+      <li>TensorFlow / Keras</li>
+      <li>OpenCV</li>
+      <li>CNN, RNN, LSTM</li>
     </ul>
-    <div class="nav-actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
-      </button>
-      <a href="your-cv.pdf" class="btn btn-outline" download>
-        <i class="fas fa-download"></i> Resume
-      </a>
-    </div>
-    <button class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="grid-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span> Available for hire
-      </div>
-      <h1>
-        Hi, I'm <span class="gradient-text">Shaurya</span>
-      </h1>
-      <h2 class="typed-wrapper">
-        I build <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
-      </h2>
-      <p class="hero-description">
-        Full-stack ML developer passionate about crafting beautiful ML systems
-        . Turning ideas into elegant solutions.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">
-          View My Work <i class="fas fa-arrow-right"></i>
-        </a>
-        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
-      </div>
-      <div class="hero-socials">
-        <a href="https://github.com/shauryasingh000" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="mailto:shauryasinh30630@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="code-window">
-        <div class="window-header">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="window-title">about_me.js</span>
-        </div>
-        <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
-  <span class="code-prop">name</span>: <span class="code-string">"Your Name"</span>,
-  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Dev"</span>,
-  <span class="code-prop">location</span>: <span class="code-string">"Your City 🌍"</span>,
-  <span class="code-prop">skills</span>: [
-    <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>,
-    <span class="code-string">"Python"</span>, <span class="code-string">"AWS"</span>
-  ],
-  <span class="code-prop">available</span>: <span class="code-bool">true</span>,
-  <span class="code-prop">hire</span>: () <span class="code-keyword">=></span> {
-    <span class="code-keyword">return</span> <span class="code-string">"Let's build something!"</span>
-  }
-};</code></pre>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    <h3>Data Science</h3>
+    <ul>
+      <li>Pandas</li>
+      <li>NumPy</li>
+      <li>Matplotlib</li>
+      <li>Seaborn</li>
+      <li>Plotly</li>
+    </ul>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">01. About</span>
-        <h2>Who Am I?</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-image-wrapper">
-          <div class="image-frame">
-            <img src="assets/profile.jpg" alt="Your Name" class="profile-img"/>
-            <div class="image-decoration"></div>
-          </div>
-          <div class="stats-card">
-            <div class="stat">
-              <span class="stat-number" data-target="3">0</span>
-              <span class="stat-label">Years Exp.</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-number" data-target="20">0</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-number" data-target="15">0</span>
-              <span class="stat-label">Clients</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-text">
-          <p>
-            I'm a <strong>full-stack developer</strong> with a passion for building 
-            products that live on the internet. I care deeply about crafting 
-            experiences that are fast, accessible, and delightful to use.
-          </p>
-          <p>
-            When I'm not coding, you'll find me exploring open-source projects, 
-            writing technical articles, or experimenting with new technologies.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <i class="fas fa-graduation-cap"></i>
-              <span>BSc Computer Science, University Name</span>
-            </div>
-            <div class="highlight-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Based in Your City, Country</span>
-            </div>
-            <div class="highlight-item">
-              <i class="fas fa-briefcase"></i>
-              <span>Currently at Company Name</span>
-            </div>
-            <div class="highlight-item">
-              <i class="fas fa-coffee"></i>
-              <span>Fueled by coffee and curiosity</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <h3>Concepts</h3>
+    <ul>
+      <li>Feature Engineering</li>
+      <li>Image Processing</li>
+      <li>Time Series Analysis</li>
+    </ul>
 
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">02. Skills</span>
-        <h2>What I Work With</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Frontend</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>React / Next.js</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="90"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>TypeScript</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="85"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>CSS / Tailwind</span>
-                <span>92%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="92"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-server"></i> Backend</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Node.js / Express</span>
-                <span>88%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="88"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Python / Django</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="80"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>PostgreSQL / MongoDB</span>
-                <span>82%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="82"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-cloud"></i> DevOps & Tools</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>AWS / GCP</span>
-                <span>75%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="75"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Docker / Kubernetes</span>
-                <span>70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="70"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Git / CI/CD</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="90"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Tech icons row -->
-      <div class="tech-icons">
-        <div class="tech-icon" title="JavaScript"><i class="fab fa-js-square"></i></div>
-        <div class="tech-icon" title="React"><i class="fab fa-react"></i></div>
-        <div class="tech-icon" title="Node.js"><i class="fab fa-node-js"></i></div>
-        <div class="tech-icon" title="Python"><i class="fab fa-python"></i></div>
-        <div class="tech-icon" title="Docker"><i class="fab fa-docker"></i></div>
-        <div class="tech-icon" title="AWS"><i class="fab fa-aws"></i></div>
-        <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></div>
-        <div class="tech-icon" title="Linux"><i class="fab fa-linux"></i></div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">03. Projects</span>
-        <h2>Things I've Built</h2>
-      </div>
-      <div class="projects-grid">
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
 
-        <!-- Featured Project -->
-        <div class="project-card featured">
-          <div class="project-image">
-            <img src="assets/project1.png" alt="Project 1"/>
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" target="_blank" class="project-link">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="#" target="_blank" class="project-link">
-                  <i class="fab fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tag">Featured Project</div>
-            <h3>Project Name One</h3>
-            <p>
-              A full-stack web application that does something amazing. 
-              Built with modern technologies and best practices. 
-              Handles real-time data processing for thousands of users.
-            </p>
-            <div class="project-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>PostgreSQL</span>
-              <span>AWS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Regular Projects -->
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-folder-open project-icon"></i>
-            <div class="project-links">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <h3>Project Two</h3>
-          <p>A cool tool that solves a specific problem. Clean UI, fast performance, open source.</p>
-          <div class="project-tech">
-            <span>Vue.js</span>
-            <span>Python</span>
-            <span>Redis</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-folder-open project-icon"></i>
-            <div class="project-links">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <h3>Project Three</h3>
-          <p>An automation tool that saves developers hours every week. 500+ GitHub stars.</p>
-          <div class="project-tech">
-            <span>TypeScript</span>
-            <span>GraphQL</span>
-            <span>Docker</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-folder-open project-icon"></i>
-            <div class="project-links">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <h3>Project Four</h3>
-          <p>Mobile-first web app with offline support and real-time sync. 1000+ active users.</p>
-          <div class="project-tech">
-            <span>React Native</span>
-            <span>Firebase</span>
-            <span>Redux</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="section-cta">
-        <a href="https://github.com/shauryasingh000" target="_blank" class="btn btn-outline">
-          <i class="fab fa-github"></i> See More on GitHub
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE TIMELINE -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">04. Experience</span>
-        <h2>My Journey</h2>
-      </div>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Senior Developer</h3>
-              <span class="timeline-date">2023 – Present</span>
-            </div>
-            <div class="timeline-company">
-              <i class="fas fa-building"></i> Company Name
-            </div>
-            <p>Leading frontend architecture for a SaaS platform serving 50k+ users. 
-               Mentoring junior developers, conducting code reviews, and driving 
-               adoption of modern development practices.</p>
-            <div class="timeline-tags">
-              <span>React</span><span>TypeScript</span><span>AWS</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Full Stack Developer</h3>
-              <span class="timeline-date">2021 – 2023</span>
-            </div>
-            <div class="timeline-company">
-              <i class="fas fa-building"></i> Previous Company
-            </div>
-            <p>Built and maintained multiple client-facing applications. 
-               Reduced load times by 40% through performance optimizations. 
-               Implemented CI/CD pipelines cutting deployment time by 60%.</p>
-            <div class="timeline-tags">
-              <span>Node.js</span><span>Vue.js</span><span>Docker</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>BSc Computer Science</h3>
-              <span class="timeline-date">2018 – 2021</span>
-            </div>
-            <div class="timeline-company">
-              <i class="fas fa-university"></i> University Name
-            </div>
-            <p>First Class Honours. Specialised in software engineering and distributed systems. 
-               Dissertation on machine learning for predictive analytics.</p>
-            <div class="timeline-tags">
-              <span>Python</span><span>Algorithms</span><span>ML</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">05. Contact</span>
-        <h2>Get In Touch</h2>
-        <p class="section-subtitle">
-          I'm currently open to new opportunities. Whether you have a question, 
-          a project, or just want to say hi — my inbox is always open!
-        </p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:you@email.com">you@email.com</a>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fab fa-linkedin"></i>
-            <div>
-              <h4>LinkedIn</h4>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fab fa-github"></i>
-            <div>
-              <h4>GitHub</h4>
-              <a href="https://github.com/yourusername" target="_blank">yourusername</a>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required/>
-            <label for="name">Your Name</label>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="your@email.com" required/>
-            <label for="email">Email Address</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="subject" placeholder="What's this about?" required/>
-            <label for="subject">Subject</label>
-          </div>
-          <div class="form-group">
-            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-            <label for="message">Message</label>
-          </div>
-          <button type="submit" class="btn btn-primary full-width">
-            Send Message <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>Designed & Built by <span class="gradient-text">Your Name</span></p>
-      <p class="footer-sub">
-        <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> and too much coffee
+    <div class="project">
+      <h3>Hyperspectral Imaging for Tea Quality Detection</h3>
+      <p>
+        ML-based system for early stress detection in tea plants using hyperspectral imaging
+        and chemical validation techniques.
       </p>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="project">
+      <h3>Disease Prediction System</h3>
+      <p>
+        Built ML models on diabetes and breast cancer datasets with optimized parameters
+        to achieve high accuracy.
+      </p>
+      <a href="https://github.com/shauryasingh000/Diabetes_prediction_using_MachineLearning">GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Tomato Leaf Disease Detection (CNN)</h3>
+      <p>
+        CNN-based model to classify diseased vs healthy leaves with dropout layers to prevent overfitting.
+      </p>
+      <a href="https://github.com/shauryasingh000/Tomato_Disease_Prediction_using_CNN">GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Weather Prediction using LSTM</h3>
+      <p>
+        Time-series prediction model using RNN/LSTM to forecast precipitation.
+      </p>
+      <a href="https://github.com/shauryasingh000/Weather_Prediction_using_RNN-s">GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Mushroom Classification</h3>
+      <p>
+        Classified edible vs poisonous mushrooms using multiple ML algorithms and GridSearchCV.
+      </p>
+      <a href="https://github.com/shauryasingh000/Mushroom_Class_prediction_using_MachineLearning">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <h3>Teaching Assistant – IIT Guwahati</h3>
+    <p>July 2024 – Dec 2024</p>
+    <p>
+      Assisted in course delivery, exam invigilation, and student evaluation.
+      Supported content creation and academic coordination.
+    </p>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <div class="container">
+    <h2>Education</h2>
+
+    <h3>M.Tech Biotechnology</h3>
+    <p>IIT Guwahati (2023 – Present)</p>
+    <p>CGPA: 8.55</p>
+
+    <h3>B.Tech</h3>
+    <p>Dr. Rajendra Prasad Central Agricultural University (2019 – 2023)</p>
+    <p>CGPA: 8.1</p>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+
+    <p>Email: shauryasingh30630@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/shauryasingh000">shauryasingh000</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shaurya-singh-248547210/">Profile</a></p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Shaurya Singh</p>
+</footer>
+
 </body>
 </html>
